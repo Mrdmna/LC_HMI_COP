@@ -25,32 +25,17 @@
 
   <!-- Login kutusu -->
   <div id="LoginBox" data-tchmi-type="TcHmi.Controls.System.TcHmiHtmlHost"
-       data-tchmi-height="350" data-tchmi-height-unit="px"
-       data-tchmi-width="350" data-tchmi-width-unit="px"
+       data-tchmi-height="40" data-tchmi-height-unit="%"
+       data-tchmi-width="30" data-tchmi-width-unit="%"
        data-tchmi-left="50" data-tchmi-left-unit="%"
        data-tchmi-top="30" data-tchmi-top-unit="%"
        data-tchmi-zindex="2"
-       style="transform: translate(-50%, 0); background: #181818; border-radius: 16px; box-shadow: 0 4px 32px #0008; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-    <h2 style="color: #fff; font-family: Roboto, sans-serif; margin-top: 32px;">Giriş Yap</h2>
-    <input type="text" placeholder="Kullanıcı Adı" style="margin: 24px 0 12px 0; width: 80%; padding: 12px; border-radius: 8px; border: none; background: #222; color: #fff; font-size: 1.1em;" />
-    <input type="password" placeholder="Şifre" style="margin-bottom: 24px; width: 80%; padding: 12px; border-radius: 8px; border: none; background: #222; color: #fff; font-size: 1.1em;" />
-    <button style="width: 80%; padding: 12px; border-radius: 8px; border: none; background: #00bcd4; color: #fff; font-size: 1.1em; font-weight: bold; cursor: pointer;">Giriş</button>
-    <div style="height: 32px;"></div>
-  </div>
-
-  <!-- Login kutusu 2 -->
-  <div id="LoginBox2" data-tchmi-type="TcHmi.Controls.System.TcHmiHtmlHost"
-       data-tchmi-height="350" data-tchmi-height-unit="px"
-       data-tchmi-width="350" data-tchmi-width-unit="px"
-       data-tchmi-left="50" data-tchmi-left-unit="%"
-       data-tchmi-top="60" data-tchmi-top-unit="%"
-       data-tchmi-zindex="2"
-       style="transform: translate(-50%, 0); background: #222; border-radius: 16px; box-shadow: 0 4px 32px #0008; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-    <h2 style="color: #fff; font-family: Roboto, sans-serif; margin-top: 32px;">Giriş Yap 2</h2>
-    <input type="text" placeholder="Kullanıcı Adı" style="margin: 24px 0 12px 0; width: 80%; padding: 12px; border-radius: 8px; border: none; background: #333; color: #fff; font-size: 1.1em;" />
-    <input type="password" placeholder="Şifre" style="margin-bottom: 24px; width: 80%; padding: 12px; border-radius: 8px; border: none; background: #333; color: #fff; font-size: 1.1em;" />
-    <button style="width: 80%; padding: 12px; border-radius: 8px; border: none; background: #607d8b; color: #fff; font-size: 1.1em; font-weight: bold; cursor: pointer;">Giriş 2</button>
-    <div style="height: 32px;"></div>
+       style="transform: translate(-50%, 0); background: #181818; border-radius: 2vw; box-shadow: 0 0.5vw 2vw #0008; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <h2 style="color: #fff; font-family: Roboto, sans-serif; margin-top: 6%; font-size: 2vw;">Giriş Yap</h2>
+    <input type="text" placeholder="Kullanıcı Adı" style="margin: 6% 0 3% 0; width: 80%; padding: 2.5%; border-radius: 1vw; border: none; background: #222; color: #fff; font-size: 1.2vw;" />
+    <input type="password" placeholder="Şifre" style="margin-bottom: 6%; width: 80%; padding: 2.5%; border-radius: 1vw; border: none; background: #222; color: #fff; font-size: 1.2vw;" />
+    <button style="width: 80%; padding: 2.5%; border-radius: 1vw; border: none; background: #00bcd4; color: #fff; font-size: 1.2vw; font-weight: bold; cursor: pointer;">Giriş</button>
+    <div style="height: 6%;"></div>
   </div>
 
 </div>
