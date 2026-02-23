@@ -8,18 +8,34 @@
      data-tchmi-background-image-height="100" data-tchmi-background-image-width="100"
      data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width-unit="%" data-tchmi-creator-viewport-width="1920" data-tchmi-creator-viewport-height="1080" data-tchmi-left-unit="%" data-tchmi-top-unit="%">
 
-<div id="TcHmiImage_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="15" data-tchmi-height-unit="%" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width="20" data-tchmi-width-unit="%" data-tchmi-src="Images/Anova_Logo_Beyaz_00.webp" data-tchmi-zindex="1">
-</div>
+  <!-- Arka planı siyah yap -->
+  <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+    { "color": "rgba(0, 0, 0, 1)" }
+  </script>
 
+  <!-- Anova logosu -->
+  <div id="TcHmiImage_AnovaLogo" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage"
+       data-tchmi-height="15" data-tchmi-height-unit="%"
+       data-tchmi-left="5" data-tchmi-left-unit="%"
+       data-tchmi-top="5" data-tchmi-top-unit="%"
+       data-tchmi-width="20" data-tchmi-width-unit="%"
+       data-tchmi-src="Images/Anova_Logo_Beyaz_00.webp"
+       data-tchmi-zindex="1">
+  </div>
 
+  <!-- Login kutusu -->
+  <div id="LoginBox" data-tchmi-type="TcHmi.Controls.System.TcHmiHtmlHost"
+       data-tchmi-height="350" data-tchmi-height-unit="px"
+       data-tchmi-width="350" data-tchmi-width-unit="px"
+       data-tchmi-left="50" data-tchmi-left-unit="%"
+       data-tchmi-top="30" data-tchmi-top-unit="%"
+       data-tchmi-zindex="2"
+       style="transform: translate(-50%, 0); background: #181818; border-radius: 16px; box-shadow: 0 4px 32px #0008; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <h2 style="color: #fff; font-family: Roboto, sans-serif; margin-top: 32px;">Giriş Yap</h2>
+    <input type="text" placeholder="Kullanıcı Adı" style="margin: 24px 0 12px 0; width: 80%; padding: 12px; border-radius: 8px; border: none; background: #222; color: #fff; font-size: 1.1em;" />
+    <input type="password" placeholder="Şifre" style="margin-bottom: 24px; width: 80%; padding: 12px; border-radius: 8px; border: none; background: #222; color: #fff; font-size: 1.1em;" />
+    <button style="width: 80%; padding: 12px; border-radius: 8px; border: none; background: #00bcd4; color: #fff; font-size: 1.1em; font-weight: bold; cursor: pointer;">Giriş</button>
+    <div style="height: 32px;"></div>
+  </div>
 
-
-
-<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
-{
-  "color": "rgba(0, 0, 0, 1)"
-}
-</script>
-<div id="TcHmiHtmlHost_1" data-tchmi-type="TcHmi.Controls.System.TcHmiHtmlHost" data-tchmi-height="300" data-tchmi-height-unit="px" data-tchmi-left="140" data-tchmi-left-unit="px" data-tchmi-top="28" data-tchmi-top-unit="px" data-tchmi-width="300" data-tchmi-width-unit="px">
-</div>
 </div>
