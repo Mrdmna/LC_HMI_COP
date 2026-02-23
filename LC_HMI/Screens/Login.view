@@ -6,7 +6,8 @@
      data-tchmi-height-mode="Parent"
      data-tchmi-min-height="100" data-tchmi-min-height-unit="%"
      data-tchmi-background-image-height="100" data-tchmi-background-image-width="100"
-     data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width-unit="%" data-tchmi-creator-viewport-width="1920" data-tchmi-creator-viewport-height="1080" data-tchmi-left-unit="%" data-tchmi-top-unit="%">
+     data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width-unit="%" data-tchmi-creator-viewport-width="1920" data-tchmi-creator-viewport-height="1080" data-tchmi-left-unit="%" data-tchmi-top-unit="%"
+     style="position: relative; width: 100vw; height: 100vh;">
 
   <!-- Arka planı siyah yap -->
   <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
@@ -30,7 +31,7 @@
        data-tchmi-left="50" data-tchmi-left-unit="%"
        data-tchmi-top="50" data-tchmi-top-unit="%"
        data-tchmi-zindex="2"
-       style="transform: translate(-50%, -50%); background: #181818; border-radius: 2vw; box-shadow: 0 0.5vw 2vw #0008; display: flex; flex-direction: column; align-items: center; justify-content: center; position: absolute;">
+       style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: #181818; border-radius: 2vw; box-shadow: 0 0.5vw 2vw #0008; display: flex; flex-direction: column; align-items: center; justify-content: center;">
     <h2 style="color: #fff; font-family: Roboto, sans-serif; margin-top: 6%; font-size: 2vw;">Giriş Yap</h2>
     <input type="text" placeholder="Kullanıcı Adı" style="margin: 6% 0 3% 0; width: 80%; padding: 2.5%; border-radius: 1vw; border: none; background: #222; color: #fff; font-size: 1.2vw;" />
     <input type="password" placeholder="Şifre" style="margin-bottom: 6%; width: 80%; padding: 2.5%; border-radius: 1vw; border: none; background: #222; color: #fff; font-size: 1.2vw;" />
