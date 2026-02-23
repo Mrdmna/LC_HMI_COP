@@ -55,4 +55,46 @@
     </script>
   </div>
 
+  <!-- Çıkış Yap butonu -->
+  <script type="text/javascript">
+    function addLogoutButton(bgColor) {
+      var logoutBtn = document.createElement('button');
+      logoutBtn.innerText = 'Çıkış Yap';
+      logoutBtn.style.position = 'fixed';
+      logoutBtn.style.top = '2vw';
+      logoutBtn.style.right = '2vw';
+      logoutBtn.style.padding = '1vw 2vw';
+      logoutBtn.style.background = '#222';
+      logoutBtn.style.color = '#fff';
+      logoutBtn.style.fontSize = '1.2vw';
+      logoutBtn.style.border = 'none';
+      logoutBtn.style.borderRadius = '1vw';
+      logoutBtn.style.cursor = 'pointer';
+      logoutBtn.style.zIndex = '9999';
+      logoutBtn.onclick = function() { window.location.reload(); };
+      document.body.appendChild(logoutBtn);
+    }
+    window.addEventListener('DOMContentLoaded', function() {
+      var user = document.getElementById('username');
+      var pass = document.getElementById('password');
+      var loginBtn = document.getElementById('loginBtn');
+      if(loginBtn) {
+        loginBtn.onclick = function() {
+          var userVal = user.value;
+          var passVal = pass.value;
+          var errorDiv = document.getElementById('loginError');
+          if(userVal === 'Admin' && passVal === '1') {
+            document.body.innerHTML = '<div style="width:100vw;height:100vh;background:#fff;display:flex;align-items:center;justify-content:center;"><h1 style="color:#222;font-size:4vw;">Hoşgeldin Admin!</h1></div>';
+            addLogoutButton('#fff');
+          } else if(userVal === 'User' && passVal === '2') {
+            document.body.innerHTML = '<div style="width:100vw;height:100vh;background:#c00;display:flex;align-items:center;justify-content:center;"><h1 style="color:#fff;font-size:4vw;">Hoşgeldin User!</h1></div>';
+            addLogoutButton('#c00');
+          } else {
+            errorDiv.style.display = 'block';
+          }
+        };
+      }
+    });
+  </script>
+
 </div>
