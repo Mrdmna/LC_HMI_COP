@@ -34,10 +34,25 @@
        data-tchmi-zindex="2"
        style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: #181818; border-radius: 2vw; box-shadow: 0 0.5vw 2vw #0008; display: flex; flex-direction: column; align-items: center; justify-content: center;">
     <h2 style="color: #fff; font-family: Roboto, sans-serif; margin-top: 6%; font-size: 2vw;">Giriş Yap</h2>
-    <input type="text" placeholder="Kullanıcı Adı" style="margin: 6% 0 3% 0; width: 80%; padding: 2.5%; border-radius: 1vw; border: none; background: #222; color: #fff; font-size: 1.2vw;" />
-    <input type="password" placeholder="Şifre" style="margin-bottom: 6%; width: 80%; padding: 2.5%; border-radius: 1vw; border: none; background: #222; color: #fff; font-size: 1.2vw;" />
-    <button style="width: 80%; padding: 2.5%; border-radius: 1vw; border: none; background: #00bcd4; color: #fff; font-size: 1.2vw; font-weight: bold; cursor: pointer;">Giriş</button>
+    <input id="username" type="text" placeholder="Kullanıcı Adı" style="margin: 6% 0 3% 0; width: 80%; padding: 2.5%; border-radius: 1vw; border: none; background: #222; color: #fff; font-size: 1.2vw;" />
+    <input id="password" type="password" placeholder="Şifre" style="margin-bottom: 6%; width: 80%; padding: 2.5%; border-radius: 1vw; border: none; background: #222; color: #fff; font-size: 1.2vw;" />
+    <button id="loginBtn" style="width: 80%; padding: 2.5%; border-radius: 1vw; border: none; background: #00bcd4; color: #fff; font-size: 1.2vw; font-weight: bold; cursor: pointer;">Giriş</button>
+    <div id="loginError" style="color: #ff5252; margin-top: 2vh; display: none;">Hatalı kullanıcı adı veya şifre!</div>
     <div style="height: 6%;"></div>
+    <script type="text/javascript">
+      document.getElementById('loginBtn').onclick = function() {
+        var user = document.getElementById('username').value;
+        var pass = document.getElementById('password').value;
+        var errorDiv = document.getElementById('loginError');
+        if(user === 'Admin' && pass === '1') {
+          document.body.innerHTML = '<div style="width:100vw;height:100vh;background:#fff;display:flex;align-items:center;justify-content:center;"><h1 style="color:#222;font-size:4vw;">Hoşgeldin Admin!</h1></div>';
+        } else if(user === 'User' && pass === '2') {
+          document.body.innerHTML = '<div style="width:100vw;height:100vh;background:#c00;display:flex;align-items:center;justify-content:center;"><h1 style="color:#fff;font-size:4vw;">Hoşgeldin User!</h1></div>';
+        } else {
+          errorDiv.style.display = 'block';
+        }
+      };
+    </script>
   </div>
 
 </div>
