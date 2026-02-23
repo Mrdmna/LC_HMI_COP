@@ -38,4 +38,19 @@
     <div style="height: 32px;"></div>
   </div>
 
+  <!-- Login kutusu 2 -->
+  <div id="LoginBox2" data-tchmi-type="TcHmi.Controls.System.TcHmiHtmlHost"
+       data-tchmi-height="350" data-tchmi-height-unit="px"
+       data-tchmi-width="350" data-tchmi-width-unit="px"
+       data-tchmi-left="50" data-tchmi-left-unit="%"
+       data-tchmi-top="60" data-tchmi-top-unit="%"
+       data-tchmi-zindex="2"
+       style="transform: translate(-50%, 0); background: #222; border-radius: 16px; box-shadow: 0 4px 32px #0008; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <h2 style="color: #fff; font-family: Roboto, sans-serif; margin-top: 32px;">Giriş Yap 2</h2>
+    <input type="text" placeholder="Kullanıcı Adı" style="margin: 24px 0 12px 0; width: 80%; padding: 12px; border-radius: 8px; border: none; background: #333; color: #fff; font-size: 1.1em;" />
+    <input type="password" placeholder="Şifre" style="margin-bottom: 24px; width: 80%; padding: 12px; border-radius: 8px; border: none; background: #333; color: #fff; font-size: 1.1em;" />
+    <button style="width: 80%; padding: 12px; border-radius: 8px; border: none; background: #607d8b; color: #fff; font-size: 1.1em; font-weight: bold; cursor: pointer;">Giriş 2</button>
+    <div style="height: 32px;"></div>
+  </div>
+
 </div>
